@@ -1,22 +1,33 @@
-# GTK Keylogger Utility (Python + GTK 3)
+# 🖋️ GTK Clipboard Manager Utility (Python + GTK 3)
 
-A lightweight keylogger utility built using Python and GTK 3, with support for encryption using Fernet (symmetric encryption). This tool leverages native Linux GUI components (via PyGObject) and captures keyboard input at the system level.
+A lightweight, encrypted clipboard manager built using Python and GTK 3. This utility monitors your clipboard for changes and securely logs clipboard contents using Fernet symmetric encryption. The application features a clean GTK 3 interface, built with PyGObject, and runs on most Linux systems with minimal dependencies.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Encrypted Keylogging**: Securely stores logged keystrokes using the `cryptography` library (Fernet symmetric encryption).
-- 🧵 **Multithreaded Design**: Logging and GUI components run concurrently using Python's `threading`.
-- 🎛️ **GTK 3 GUI**: Built with the GTK 3 framework via `PyGObject`, allowing a native-feeling GUI on Linux desktops.
-- ⌨️ **System-wide Key Capture**: Uses `pynput` to capture all keyboard activity across applications.
-- 📦 **Lightweight & Minimal**: Only a few dependencies, focused on simplicity and clarity.
+- 🔐 **Encrypted Clipboard Logging**  
+  Securely stores copied clipboard text using the `cryptography` library (Fernet encryption).
+  
+- 🧵 **Multithreaded Design**  
+  Clipboard monitoring and the GTK GUI run concurrently using Python’s `threading` module for smooth performance.
+
+- 🖼️ **GTK 3 GUI**  
+  Built with PyGObject for native GTK integration on Linux desktops.
+
+- 📋 **Clipboard Monitoring**  
+  Automatically detects clipboard changes and logs new entries.
+
+- 📦 **Minimal & Lightweight**  
+  Few dependencies, no bloat — easy to deploy and run on any Linux machine.
 
 ---
 
 ## 📦 Requirements
 
-### Python Packages (can be installed via pip):
+### ✅ Python Packages
+
+Install via pip:
 
 ```bash
 pip install -r requirements.txt
