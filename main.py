@@ -221,11 +221,6 @@ class ClipboardWindow(Gtk.Window):
         cr.set_source_rgba(0.1176, 0.1176, 0.1843, 1)  # #1e1e2f
         cr.fill_preserve()
 
-        # Optional: add a border if you want
-        # cr.set_source_rgba(0.3, 0.3, 0.5, 0.8)
-        # cr.set_line_width(2)
-        # cr.stroke()
-
         return False
 
     def on_map(self, widget):
@@ -247,7 +242,7 @@ class ClipboardWindow(Gtk.Window):
             label = Gtk.Label(label=display_text)
             label.set_line_wrap(True)  # enable wrapping
             label.set_max_width_chars(15)  # approx 15 chars width, adjust as needed
-            label.set_ellipsize(Pango.EllipsizeMode.END)  # optionally add ellipsis
+            label.set_ellipsize(Pango.EllipsizeMode.END)
             label.set_xalign(0)  # left align
             label.set_hexpand(True)  # expand label horizontally inside button
 
