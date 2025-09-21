@@ -1,0 +1,4 @@
+PyGObject~=3.48.2
+pycairo~=1.25.1
+pynput~=1.8.1
+cryptography~=41.0.7
